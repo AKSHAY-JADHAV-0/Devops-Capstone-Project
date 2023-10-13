@@ -1,8 +1,13 @@
 name: CI Build
 on:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
+      
