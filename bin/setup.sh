@@ -5,7 +5,8 @@ echo "****************************************"
 
 echo "Installing Python 3.10.12 and Virtual Environment"
 sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y python3.10.12 python3.10.12-venv
+
+sudo DEBIAN_FRONTEND=noninteractive sudo apt-get install -y python3.10.12 python3.10.12-venv
 
 echo "Making Python 3.10.12 the default..."
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10.12
